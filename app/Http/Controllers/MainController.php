@@ -6,11 +6,9 @@ use Illuminate\Http\Request;
 
 class MainController extends Controller
 {
-    // Método do controlador
-
+    // Método do controlador index
     public function index()
     {
-        echo "Hello Controller!";
+        return view('main');
     }
-
 }
