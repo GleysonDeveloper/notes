@@ -12,6 +12,11 @@ class AuthController extends Controller
         return view('login');
     }
 
+    public function loginSubmint(Request $request)
+    {
+        echo 'login submit';
+    }
+
     public function logout()
     {
         echo 'logout';
