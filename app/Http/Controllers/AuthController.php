@@ -9,7 +9,7 @@ class AuthController extends Controller
     //
     public function login()
     {
-        echo 'login';
+        return view('login');
     }
 
     public function logout()
