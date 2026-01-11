@@ -6,5 +6,5 @@ use Illuminate\Support\Facades\Route;
 
 // auth routes
 Route::get('/login', [AuthController::class, 'login']);
-Route::post('/loginSubmint', [AuthController::class, 'loginSubmint']);
+Route::post('/loginSubmit', [AuthController::class, 'loginSubmit']);
 Route::get('/logout', [AuthController::class, 'logout']);
