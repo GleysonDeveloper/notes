@@ -14,14 +14,10 @@ class MainController extends Controller
         $user = User::find($id)->toArray();
         $notes = User::find($id)->notes()->get()->toArray();
 
-        echo '<pre>';
-        print_r($user);
-        print_r($notes);
 
-        die;
 
         // show home view
-        return view('home');
+        return view('home', ['notes' => $notes]);
     }
 
     public function newNote()
