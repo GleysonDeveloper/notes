@@ -12,7 +12,7 @@
                 </div>
             </div>
             <hr>
-            <p class="text-secondary">{{ $note['text'] }}</p>
+            <p class="text-secondary">{{ $note['note'] }}</p>
         </div>
     </div>
 </div>
