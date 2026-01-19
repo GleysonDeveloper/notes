@@ -12,6 +12,7 @@ class Operations
         // check if $value is encrypted
         try {
             $id = Crypt::decrypt($value);
+            return $id;
         } catch (DecryptException $e) {
             return redirect()->route('home');
         }
